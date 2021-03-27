@@ -22,7 +22,7 @@ ML4source code tools:
     #dataset
     dataset_size: 2,900,000 lines of code
     dataset_type: Bug & No bug
-    dataset_label: Labeled
+    dataset_label: Unlabeled
     dataset_availability: Available
     dataset_link: https://www.microsoft.com/en-us/download/details.aspx?id=56844
     dataset_comments: Real source code
@@ -66,7 +66,7 @@ ML4source code tools:
     tool_name: SinkFinder
     tool_goal: Detection
     tool_error: Vulnerabilities
-    tool_representation: Graph
+    tool_representation: Graph, Token
     tool_method: SVM
     tool_language: C
     tool_available: 
@@ -142,17 +142,17 @@ ML4source code tools:
     paper_link: https://ieeexplore.ieee.org/document/8540022
     paper_summary: Automatic feature learning to capture both semantic and syntactic properties, file granularity
     #tool
-    tool_name: 
+    tool_name: -
     tool_goal: Detection
     tool_error: Vulnerabilities
-    tool_representation: AST
+    tool_representation: AST, Token
     tool_method: RNN (LSTM)
     tool_language: Java
     tool_available: 
     tool_link: 
     #dataset
     dataset_size: 18 sets of 46-3450 files
-    dataset_type: Bugged + Fixed 
+    dataset_type: Bugged + No bug 
     dataset_label: Labeled
     dataset_availability: 
     dataset_link: 
@@ -251,7 +251,7 @@ ML4source code tools:
     tool_goal: Correction
     tool_error: Syntactic
     tool_representation: Token
-    tool_method: deep RL (LfD), RNN (LSTM)
+    tool_method: deep RL Learning from Demonstration, RNN (LSTM)
     tool_language: C
     tool_available: 
     tool_link: 
@@ -261,7 +261,7 @@ ML4source code tools:
     dataset_label: Labeled
     dataset_availability: 
     dataset_link: 
-    dataset_comments: 
+    dataset_comments: Student programs, synthetic mutation for bugged pair
         
     #paper
     paper_title: Neural attribution for semantic bug-localization in student programs
@@ -273,7 +273,7 @@ ML4source code tools:
     paper_link: https://proceedings.neurips.cc/paper/2019/hash/f29a179746902e331572c483c45e5086-Abstract.html
     paper_summary: Automatically localize bugs by checking how much each line influences passing or failing a test - suspiciousness score
     #tool
-    tool_name: 
+    tool_name: -
     tool_goal: Detection
     tool_error: Syntactic
     tool_representation: AST
@@ -299,7 +299,7 @@ ML4source code tools:
     paper_link: https://arxiv.org/abs/1906.00307
     paper_summary: Bug finding as a neural classification problem
     #tool
-    tool_name: 
+    tool_name: -
     tool_goal: Detection
     tool_error: Syntactic
     tool_representation: Token
@@ -351,7 +351,7 @@ ML4source code tools:
     paper_link: https://dl.acm.org/doi/10.5555/3327757.3327890
     paper_summary: Mapping from one domain to another without requiring paired labeled examples, improvement to Gupta as no pairs are required
     #tool
-    tool_name: 
+    tool_name: -
     tool_goal: Correction
     tool_error: Vulnerabilities 
     tool_representation: Token
@@ -412,7 +412,7 @@ ML4source code tools:
     tool_available: 
     tool_link: 
     #dataset
-    dataset_size: 
+    dataset_size: 7 sets of 330 files
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
     dataset_availability: 
@@ -429,7 +429,7 @@ ML4source code tools:
     paper_link: https://www.researchgate.net/publication/323248034
     paper_summary: Gadget granularity detection
     #tool
-    tool_name: 
+    tool_name: VulDeePecker
     tool_goal: Detection
     tool_error: Vulnerabilities
     tool_representation: Token
@@ -455,11 +455,11 @@ ML4source code tools:
     paper_link: https://dl.acm.org/doi/10.1145/3360588
     paper_summary: Bug detection with emphasis on learning the global context (program dependence graph, data flow graph)
     #tool
-    tool_name: 
+    tool_name: -
     tool_goal: Detection
     tool_error: Semantic
-    tool_representation: Graph` 
-    tool_method: GRU, CNN
+    tool_representation: Graph, AST
+    tool_method: RNN (GRU), CNN
     tool_language: Java
     tool_available: 
     tool_link: 
@@ -469,7 +469,7 @@ ML4source code tools:
     dataset_label: Labeled
     dataset_availability: 
     dataset_link: 
-    dataset_comments: 
+    dataset_comments: Real source code
         
     #paper
     paper_title: Automated vulnerability detection in source code using minimum intermediate representation learning
@@ -481,16 +481,16 @@ ML4source code tools:
     paper_link: https://www.mdpi.com/2076-3417/10/5/1692
     paper_summary: Fine detection granularity through minimum intermediate representation
     #tool
-    tool_name: 
+    tool_name: -
     tool_goal: Detection
     tool_error: Vulnerabilities
-    tool_representation: Graph
+    tool_representation: Graph, Token
     tool_method: BoW, CNN
     tool_language: C
     tool_available: 
     tool_link: 
     #dataset
-    dataset_size: 60000
+    dataset_size: 60,000
     dataset_type: Bugged + Not bugged
     dataset_label: Unlabeled
     dataset_availability: 
@@ -516,12 +516,12 @@ ML4source code tools:
     tool_available: 
     tool_link: 
     #dataset
-    dataset_size: 
-    dataset_type: 
-    dataset_label: Unlabelled
+    dataset_size: 4,900,000
+    dataset_type: Bug + Fixed
+    dataset_label: Labelled
     dataset_availability: 
     dataset_link: 
-    dataset_comments: 3 different datasets
+    dataset_comments: 3 different datasets (Defects4J, Bugs.jar, BugFix)
         
     #paper
     paper_title: VulDeeLocator: a deep learning-based fine-grained vulnerability detector
@@ -536,7 +536,7 @@ ML4source code tools:
     tool_name: VulDeeLocator
     tool_goal: Detection
     tool_error: Vulnerabilities
-    tool_representation: AST
+    tool_representation: AST, TOken
     tool_method: RNN (BRNN)
     tool_language: C
     tool_available: 
@@ -562,7 +562,7 @@ ML4source code tools:
     tool_name: SySeVR
     tool_goal: Detection
     tool_error: Vulnerabilities
-    tool_representation: Graph
+    tool_representation: Graph, AST
     tool_method: BGRU, RNN (BLSTM)  *different worse performing neural networks tested
     tool_language: C
     tool_available: 
@@ -594,7 +594,7 @@ ML4source code tools:
     tool_available: 
     tool_link: 
     #dataset
-    dataset_size: 6,000 
+    dataset_size: 6,000 functions
     dataset_type: Bugged + Fixed
     dataset_label: Unlabeled
     dataset_availability: 
@@ -611,10 +611,10 @@ ML4source code tools:
     paper_link: https://ieeexplore.ieee.org/document/8812134
     paper_summary: Refractoring inconsistent method names
     #tool
-    tool_name: 
+    tool_name: - 
     tool_goal: Correction
     tool_error: Semantic
-    tool_representation: AST
+    tool_representation: AST, Token
     tool_method: CNN, paragraph vector
     tool_language: Java
     tool_available: 
@@ -666,7 +666,7 @@ ML4source code tools:
     tool_name: DeepBugs
     tool_goal: Detection
     tool_error: Semantic
-    tool_representation: Graph
+    tool_representation: Graph, AST
     tool_method: NN
     tool_language: JavaScript
     tool_available: 
@@ -715,7 +715,7 @@ ML4source code tools:
     paper_link: https://ieeexplore.ieee.org/document/8614145
     paper_summary: Using deep learning to learn features directly from source code
     #tool
-    tool_name: 
+    tool_name: -
     tool_goal: Detection
     tool_error: Vulnerabilities
     tool_representation: Token
@@ -750,7 +750,7 @@ ML4source code tools:
     tool_available: 
     tool_link: 
     #dataset
-    dataset_size: 44,495
+    dataset_size: 44,495 programs
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
     dataset_availability: 
@@ -796,7 +796,7 @@ ML4source code tools:
     tool_name: AI4VA
     tool_goal: Detection
     tool_error: Vulnerabilities
-    tool_representation: Graph
+    tool_representation: Graph, AST
     tool_method: graph-NN
     tool_language: C
     tool_available: 
@@ -819,12 +819,12 @@ ML4source code tools:
     paper_link: https://arxiv.org/abs/2004.12783
     paper_summary: Vulnerability detection in big codebass, feedforward NN with single hidden layer
     #tool
-    tool_name: Detection
-    tool_goal: Vulnerabilities
-    tool_error: AST
-    tool_representation: NN
-    tool_method: C
-    tool_language: 
+    tool_name: -
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: AST
+    tool_method: NN
+    tool_language: C
     tool_available: 
     tool_link: 
     #dataset
@@ -871,7 +871,7 @@ ML4source code tools:
     paper_link: https://dl.acm.org/doi/10.1145/3340544
     paper_summary: Method level neural translation
     #tool
-    tool_name: 
+    tool_name: -
     tool_goal: Correction
     tool_error: Semantic
     tool_representation: AST 
@@ -923,10 +923,10 @@ ML4source code tools:
     paper_link: https://dl.acm.org/doi/10.1145/2884781.2884804
     paper_summary: Focus on automatic *semantic* feature learning through deep belief network, file granularity
     #tool
-    tool_name: 
+    tool_name: -
     tool_goal: Detection
     tool_error: Semantic
-    tool_representation: Graph 
+    tool_representation: Graph, AST
     tool_method: DBN
     tool_language: Java
     tool_available: 
@@ -978,7 +978,7 @@ ML4source code tools:
     tool_name: DrRepair
     tool_goal: Correction
     tool_error: Syntactic
-    tool_representation: Graph
+    tool_representation: Graph, Token
     tool_method: graph-NN, RNN (LSTM)
     tool_language: C
     tool_available: 
@@ -1004,7 +1004,7 @@ ML4source code tools:
     tool_name: Devign
     tool_goal: Detection
     tool_error: Vulnerabilities
-    tool_representation: Graph
+    tool_representation: AST, Graph, Token
     tool_method: graph-NN
     tool_language: C
     tool_available: 
@@ -1030,7 +1030,7 @@ ML4source code tools:
     tool_name: μVulDeePecker
     tool_goal: Detection
     tool_error: Vulnerabilities
-    tool_representation: Graph
+    tool_representation: Graph, AST
     tool_method: RNN (BLSTM)
     tool_language: C
     tool_available: 
@@ -1041,5 +1041,4 @@ ML4source code tools:
     dataset_label: Labeled
     dataset_availability: 
     dataset_link: 
-    dataset_comments: 
-     
+    dataset_comments: SARD + NVD
