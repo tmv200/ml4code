@@ -1,0 +1,1045 @@
+---
+ML4source code tools:
+
+    #paper
+    paper_title: Learning to represent programs with graphs
+    paper_authors: Allamanis, Miltiadis and Brockschmidt, Marc and Khademi, Mahmoud
+    paper_research_group: 
+    paper_year: 2018
+    paper_type: Conference
+    paper_published: International Conference on Learning Representations
+    paper_link: https://openreview.net/pdf?id=BJOFETxR-
+    paper_summary: Novel graph representation capturing semantic and syntactic information of source code
+    #tool
+    tool_name: VarMisuse
+    tool_goal: Detection
+    tool_error: Semantic
+    tool_representation: AST, Graph
+    tool_method: GGNN, GRU
+    tool_language: C#
+    tool_available: Available
+    tool_link: https://github.com/Microsoft/gated-graph-neural-network-samples
+    #dataset
+    dataset_size: 2,900,000 lines of code
+    dataset_type: Bug & No bug
+    dataset_label: Labeled
+    dataset_availability: Available
+    dataset_link: https://www.microsoft.com/en-us/download/details.aspx?id=56844
+    dataset_comments: Real source code
+    
+    #paper
+    paper_title: Neuro-symbolic program corrector for introductory programming assignments
+    paper_authors: Bhatia, Sahil and Kohli, Pushmeet and Singh, Rishabh
+    paper_research_group: 
+    paper_year: 2018
+    paper_type: Conference
+    paper_published: International Conference on Software Engineering
+    paper_link: https://ieeexplore.ieee.org/document/8453063
+    paper_summary: Trains on correct examples only, uses compiler for localization of errors and proposes a fix, only one correction per program
+    #tool
+    tool_name: SynFix
+    tool_goal: Correction
+    tool_error: Syntactic
+    tool_representation: Token
+    tool_method: RNN (LSTM)
+    tool_language: Python
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 40,835 programs
+    dataset_type: No bug
+    dataset_label: Unlabeled
+    dataset_availability: Unvailable 
+    dataset_link: 
+    dataset_comments: Student programs, correct solutions to specific tasks
+    
+    #paper
+    paper_title: SinkFinder: Harvesting hundreds of unknown interesting function pairs with just one seed
+    paper_authors: Bian, Pan and Liang, Bin and Huang, Jianjun and Shi, Wenchang and Wang, Xidong and Zhang, Jian
+    paper_research_group: 
+    paper_year: 2020
+    paper_type: Conference
+    paper_published: Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering
+    paper_link: https://dl.acm.org/doi/10.1145/3368089.3409678
+    paper_summary: Identifies security sensitive function pairs with little prior knowledge (only seeing an example of one pair) and then detect errors in their usage
+    #tool
+    tool_name: SinkFinder
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: Graph
+    tool_method: SVM
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 15,000,000 lines of code
+    dataset_type: No bug
+    dataset_label: Unlabeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code (Linux kernel)
+
+    #paper
+    paper_title: OffSide: Learning to Identify Mistakes in Boundary Conditions
+    paper_authors: Briem, Jon Arnar and Smit, Jordi and Sellik, Hendrig and Rapoport, Pavel and Gousios, Georgios and Aniche, Mauricio
+    paper_research_group: 
+    paper_year: 2020
+    paper_type: Conference
+    paper_published: International Conference on Software Engineering Workshops
+    paper_link: https://dl.acm.org/doi/abs/10.1145/3387940.3391464
+    paper_summary: Targets boundary condition mistakes
+    #tool
+    tool_name: OffSide
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: AST
+    tool_method: Attention-NN
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 1,500,000 code snippets
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Bug free programs mutated to include errors, subset of (Alon 2019 Code2seq)
+
+    #paper
+    paper_title: SequenceR: Sequence-to-sequence learning for end-to-end program repair
+    paper_authors: Chen, Zimin and Kommrusch, Steve James and Tufano, Michele and Pouchet, Louis-Noel and Poshyvanyk, Denys and Monperrus, Martin
+    paper_research_group: 
+    paper_year: 2019
+    paper_type: Journal
+    paper_published: IEEE Transactions on Software Engineering
+    paper_link: https://ieeexplore.ieee.org/document/8827954
+    paper_summary: Sequence-to-sequence correction with copy mechanism translation, one line fixes, fault localization is assumed
+    #tool
+    tool_name: SequenceR
+    tool_goal: Correction
+    tool_error: Semantic
+    tool_representation: Token 
+    tool_method: RNN (LSTM)
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 40,000 commits
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code (CodRep + Bugs2Fix)
+
+    
+    #paper
+    paper_title: Automatic Feature Learning for Predicting Vulnerable Software Components
+    paper_authors: Dam, Hoa Khanh and Tran, Truyen and Pham, Trang and Ng, Shien Wee and Grundy, John and Ghose, Aditya
+    paper_research_group: 
+    paper_year: 2021
+    paper_type: Journal
+    paper_published: IEEE Transactions on Software Engineering
+    paper_link: https://ieeexplore.ieee.org/document/8540022
+    paper_summary: Automatic feature learning to capture both semantic and syntactic properties, file granularity
+    #tool
+    tool_name: 
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: AST
+    tool_method: RNN (LSTM)
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 18 sets of 46-3450 files
+    dataset_type: Bugged + Fixed 
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code with fixes
+    
+    
+    #paper
+    paper_title: Semantic code repair using neuro-symbolic transformation networks
+    paper_authors: Devlin, Jacob and Uesato, Jonathan and Singh, Rishabh and Kohli, Pushmeet
+    paper_research_group: 
+    paper_year: 2018
+    paper_type: Conference
+    paper_published: International Conference on Learning Representations
+    paper_link: https://www.aminer.org/pub/5a260c8417c44a4ba8a311c9/semantic-code-repair-using-neuro-symbolic-transformation-networks
+    paper_summary: Fixes semantic errors without information about intended behavior, two stages: rule-based set of repair candidates, neural network scoring of candidates
+    #tool
+    tool_name: Share, Specialize, Compete
+    tool_goal: Correction
+    tool_error: Semantic
+    tool_representation: AST 
+    tool_method: RNN, rule-based
+    tool_language: Python
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 2,900,000 code snippets (1-40 lines of code)
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code from Github injected with synthetic bugs
+        
+    #paper
+    paper_title: Hoppity: Learning graph transformations to detect and fix bugs in programs
+    paper_authors: Dinella, Elizabeth and Dai, Hanjun and Li, Ziyang and Naik, Mayur and Song, Le and Wang, Ke
+    paper_research_group: 
+    paper_year: 2020
+    paper_type: Conference
+    paper_published: International Conference on Learning Representations
+    paper_link: https://iclr.cc/virtual_2020/poster_SJeqs6EFvB.html
+    paper_summary: Graph transformations from buggy to correct, graph NN for embedding and LSTM for correction
+    #tool
+    tool_name: Hoppity
+    tool_goal: Correction
+    tool_error: Semantic
+    tool_representation: AST 
+    tool_method: graph-NN,  RNN (LSTM)
+    tool_language: JavaScript
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 500,000 pairs
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code from Github, fixes requiring up to 3 edits
+        
+    #paper
+    paper_title: Deepfix: Fixing common C language errors by deep learning
+    paper_authors: Gupta, Rahul and Pal, Soham and Kanade, Aditya and Shevade, Shirish
+    paper_research_group: 
+    paper_year: 2017
+    paper_type: Conference
+    paper_published: Conference on Artificial Intelligence
+    paper_link: https://dl.acm.org/doi/10.5555/3298239.3298436
+    paper_summary: Iterative repair with compilations between iterations, multi-layered sequence-to-sequence neural netork with attention made out of RNN encoder and RNN decoder
+    #tool
+    tool_name: Deepfix
+    tool_goal: Correction
+    tool_error: Syntactic
+    tool_representation: Token
+    tool_method: RNN
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 6,971 programs
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Student programs, correct solution with incorrect pair (synthetic mutation of correct and real incorrect)
+        
+    #paper
+    paper_title: Deep reinforcement learning for syntactic error repair in student programs
+    paper_authors: Gupta, Rahul and Kanade, Aditya and Shevade, Shirish
+    paper_research_group: 
+    paper_year: 2019
+    paper_type: Conference
+    paper_published: Conference on Artificial Intelligence
+    paper_link: https://ojs.aaai.org//index.php/AAAI/article/view/3882
+    paper_summary: Extension to DeepFix, unsupervised reinforcement learning (LfD -learning from demonstration) using compiler error messages as a reward function - simulating a programmer navigating through text to spot and fix the error
+    #tool
+    tool_name: RLAssist
+    tool_goal: Correction
+    tool_error: Syntactic
+    tool_representation: Token
+    tool_method: deep RL (LfD), RNN (LSTM)
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 6,975 programs
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: 
+        
+    #paper
+    paper_title: Neural attribution for semantic bug-localization in student programs
+    paper_authors: Gupta, Rahul and Kanade, Aditya and Shevade, Shirish
+    paper_research_group: 
+    paper_year: 2019
+    paper_type: Conference
+    paper_published: Conference on Neural Information Processing Systems
+    paper_link: https://proceedings.neurips.cc/paper/2019/hash/f29a179746902e331572c483c45e5086-Abstract.html
+    paper_summary: Automatically localize bugs by checking how much each line influences passing or failing a test - suspiciousness score
+    #tool
+    tool_name: 
+    tool_goal: Detection
+    tool_error: Syntactic
+    tool_representation: AST
+    tool_method: tree-CNN
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 29 tasks with average 1,300 programs
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Student programs, correct solution with incorrect pair (synthetic mutation of correct and real incorrect)
+        
+    #paper
+    paper_title: Neural Bug Finding: A Study of Opportunities and Challenges
+    paper_authors: Habib, Andrew and Pradel, Michael
+    paper_research_group: 
+    paper_year: 2019
+    paper_type: Unpublished
+    paper_published: arXiv
+    paper_link: https://arxiv.org/abs/1906.00307
+    paper_summary: Bug finding as a neural classification problem
+    #tool
+    tool_name: 
+    tool_goal: Detection
+    tool_error: Syntactic
+    tool_representation: Token
+    tool_method: RNN (BLSTM)
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 112 projects
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Self-created labels by running state-of-the-art static analyzer (Error Prone)
+        
+    #paper
+    paper_title: SampleFix: Learning to Correct Programs by Efficient Sampling of Diverse Fixes
+    paper_authors: Hajipour, Hossein and Bhattacharyya, Apratim and Fritz, Mario
+    paper_research_group: 
+    paper_year: 2020
+    paper_type: Conference
+    paper_published: Workshop on Computer-Assisted Programming
+    paper_link: https://openreview.net/forum?id=6zafcLROWAd
+    paper_summary: Interactive (with compiler) fixes from distribution of potential fixes
+    #tool
+    tool_name: SampleFix
+    tool_goal: Correction
+    tool_error: Syntactic
+    tool_representation: Token
+    tool_method: GAN, CVAE, RNN (LSTM)
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 6,971 programs
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Student programs, correct solution with incorrect pair (synthetic mutation of correct and real incorrect)
+        
+    #paper
+    paper_title: Learning to repair software vulnerabilities with generative adversarial networks
+    paper_authors: Harer, Jacob and Ozdemir, Onur and Lazovich, Tomo and Reale, Christopher and Russell, Rebecca and Kim, Louis and Chin, Peter
+    paper_research_group: 
+    paper_year: 2018
+    paper_type: Conference
+    paper_published: Conference on Neural Information Processing Systems
+    paper_link: https://dl.acm.org/doi/10.5555/3327757.3327890
+    paper_summary: Mapping from one domain to another without requiring paired labeled examples, improvement to Gupta as no pairs are required
+    #tool
+    tool_name: 
+    tool_goal: Correction
+    tool_error: Vulnerabilities 
+    tool_representation: Token
+    tool_method: GAN
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 117,738 functions
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Two subsets were made from SATE IV (with and without pairings), we skip the paired one as it functions as a baseline
+        
+    #paper
+    paper_title: Learning to generate corrective patches using neural machine translation
+    paper_authors: Hata, Hideaki and Shihab, Emad and Neubig, Graham
+    paper_research_group: 
+    paper_year: 2018
+    paper_type: Unpublished
+    paper_published: arXiv
+    paper_link: https://arxiv.org/abs/1812.07170
+    paper_summary: Correction by learning from change hunks (fixes between commits)
+    #tool
+    tool_name: Ratchet
+    tool_goal: Correct
+    tool_error: Semantic
+    tool_representation: Token 
+    tool_method: RNN (LSTM)
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 35,137 pairs
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code, pre and post correction pairs (change hunks)
+        
+    #paper
+    paper_title: Software defect prediction via convolutional neural network
+    paper_authors: Li, Jian and He, Pinjia and Zhu, Jieming and Lyu, Michael
+    paper_research_group: 
+    paper_year: 2017
+    paper_type: Conference
+    paper_published: International Conference on Software Quality, Reliability and Security
+    paper_link: https://ieeexplore.ieee.org/document/8009936
+    paper_summary: Automatic feature extraction (CNN) combined with traditional features and logistic regression classifier, file level detection
+    #tool
+    tool_name: DP-CNN
+    tool_goal: Detection
+    tool_error: Semantic
+    tool_representation: AST 
+    tool_method: CNN, logistic regression
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: tera-PROMISE dataset
+        
+    #paper
+    paper_title: Vuldeepecker: A deep learning-based system for vulnerability detection
+    paper_authors: Li, Zhen and Zou, Deqing and Xu, Shouhuai and Ou, Xinyu and Jin, Hai and Wang, Sujuan and Deng, Zhijun and Zhong, Yuyi
+    paper_research_group: 
+    paper_year: 2018
+    paper_type: Conference
+    paper_published: Network and Distributed Systems Security Symposium
+    paper_link: https://www.researchgate.net/publication/323248034
+    paper_summary: Gadget granularity detection
+    #tool
+    tool_name: 
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: Token
+    tool_method: RNN (BLSTM)
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 61,638 code gadgets
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code with vulnerabilities
+        
+    #paper
+    paper_title: Improving bug detection via context-based code representation learning and attention-based neural networks
+    paper_authors: Li, Yi and Wang, Shaohua and Nguyen, Tien N and Van Nguyen, Son
+    paper_research_group: 
+    paper_year: 2019
+    paper_type: Conference
+    paper_published: ACM on Programming Languages
+    paper_link: https://dl.acm.org/doi/10.1145/3360588
+    paper_summary: Bug detection with emphasis on learning the global context (program dependence graph, data flow graph)
+    #tool
+    tool_name: 
+    tool_goal: Detection
+    tool_error: Semantic
+    tool_representation: Graph` 
+    tool_method: GRU, CNN
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 4,900,000 methods
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: 
+        
+    #paper
+    paper_title: Automated vulnerability detection in source code using minimum intermediate representation learning
+    paper_authors: Li, Xin and Wang, Lu and Xin, Yang and Yang, Yixian and Chen, Yuling
+    paper_research_group: 
+    paper_year: 2020
+    paper_type: Journal
+    paper_published: Applied Sciences
+    paper_link: https://www.mdpi.com/2076-3417/10/5/1692
+    paper_summary: Fine detection granularity through minimum intermediate representation
+    #tool
+    tool_name: 
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: Graph
+    tool_method: BoW, CNN
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 60000
+    dataset_type: Bugged + Not bugged
+    dataset_label: Unlabeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: SARD + NVD subset
+        
+    #paper
+    paper_title: DLFix: Context-based code transformation learning for automated program repair
+    paper_authors: Li, Yi and Wang, Shaohua and Nguyen, Tien N
+    paper_research_group: 
+    paper_year: 2020
+    paper_type: Conference
+    paper_published: International Conference on Software Engineering
+    paper_link: https://dl.acm.org/doi/10.1145/3377811.3380345
+    paper_summary: Context-based transformation
+    #tool
+    tool_name: DLFix
+    tool_goal: Correction
+    tool_error: Semantic
+    tool_representation: AST 
+    tool_method: RNN (tree-RNN)
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 
+    dataset_type: 
+    dataset_label: Unlabelled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: 3 different datasets
+        
+    #paper
+    paper_title: VulDeeLocator: a deep learning-based fine-grained vulnerability detector
+    paper_authors: Li, Zhen and Zou, Deqing and Xu, Shouhuai and Chen, Zhaoxuan and Zhu, Yawei and Jin, Hai
+    paper_research_group: 
+    paper_year: 2020
+    paper_type: Unpublished
+    paper_published: arXiv
+    paper_link: https://arxiv.org/abs/2001.02350
+    paper_summary: High detection and fine granularity through intermediate code slices
+    #tool
+    tool_name: VulDeeLocator
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: AST
+    tool_method: RNN (BRNN)
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 119,782 program slices
+    dataset_type: Bugged + Not bugged
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: LLVM and source code
+        
+    #paper
+    paper_title: SySeVR: A framework for using deep learning to detect software vulnerabilities
+    paper_authors: Li, Zhen and Zou, Deqing and Xu, Shouhuai and Jin, Hai and Zhu, Yawei and Chen, Zhaoxuan
+    paper_research_group: 
+    paper_year: 2021
+    paper_type: Journal
+    paper_published: IEEE Transactions on Dependable and Secure Computing
+    paper_link: https://ieeexplore.ieee.org/document/9321538
+    paper_summary: Improvement to VulDeePecker, syntax and semantic vector representation of source code suitable for vulnerability detection
+    #tool
+    tool_name: SySeVR
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: Graph
+    tool_method: BGRU, RNN (BLSTM)  *different worse performing neural networks tested
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 429,627 pieces of code
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: 
+        
+    #paper
+    paper_title: POSTER: Vulnerability discovery with function representation learning from unlabeled projects
+    paper_authors: Lin, Guanjun and Zhang, Jun and Luo, Wei and Pan, Lei and Xiang, Yang
+    paper_research_group: 
+    paper_year: 2017
+    paper_type: Conference
+    paper_published: Conference on Computer and Communications Securit
+    paper_link: https://dl.acm.org/doi/10.1145/3133956.3138840
+    paper_summary: Function level vulnerability discovery in cross-project setting, learning from Unlabeled functions
+    #tool
+    tool_name: POSTER
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: AST
+    tool_method: RNN (BLSTM)
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 6,000 
+    dataset_type: Bugged + Fixed
+    dataset_label: Unlabeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Only approximations of the labels
+        
+    #paper
+    paper_title: Learning to spot and refactor inconsistent method names
+    paper_authors: Liu, Kui and Kim, Dongsun and Bissyande, Tegawende and Kim, Taeyoung and Kim, Kisub and Koyuncu, Anil and Kim, Suntae and Le Traon, Yves
+    paper_research_group: 
+    paper_year: 2019
+    paper_type: Conference
+    paper_published: International Conference on Software Engineering
+    paper_link: https://ieeexplore.ieee.org/document/8812134
+    paper_summary: Refractoring inconsistent method names
+    #tool
+    tool_name: 
+    tool_goal: Correction
+    tool_error: Semantic
+    tool_representation: AST
+    tool_method: CNN, paragraph vector
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 2,000,000 methods
+    dataset_type: Bugged + Fixed
+    dataset_label: Unlabeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code
+        
+    #paper
+    paper_title: DeepDelta: learning to repair compilation errors
+    paper_authors: Mesbah, Ali and Rice, Andrew and Johnston, Emily and Glorioso, Nick and Aftandilian, Edward
+    paper_research_group: 
+    paper_year: 2019
+    paper_type: Conference
+    paper_published: Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering
+    paper_link: https://dl.acm.org/doi/10.1145/3338906.3340455
+    paper_summary: Compile-time repair for build errors using neural machine translation
+    #tool
+    tool_name: DeepDelta
+    tool_goal: Correction
+    tool_error: Semantic
+    tool_representation: AST
+    tool_method: RNN (LSTM)
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 4,800,000 builds (1 million failed)
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code (Google build error-fix pairs)
+        
+    #paper
+    paper_title: DeepBugs: a learning approach to name-based bug detection
+    paper_authors: Pradel, Michael and Sen, Koushik
+    paper_research_group: 
+    paper_year: 2017
+    paper_type: Conference
+    paper_published: ACM on Programming Languages
+    paper_link: https://dl.acm.org/doi/10.1145/3276517
+    paper_summary: Name-based bug detection (name based: taking into account meaning of words),feedforward NN with single hidden layer
+    #tool
+    tool_name: DeepBugs
+    tool_goal: Detection
+    tool_error: Semantic
+    tool_representation: Graph
+    tool_method: NN
+    tool_language: JavaScript
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 150,000 JavaScript files
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Code transformations from correct code (swapped args, wrong binary operator and operands)
+        
+    #paper
+    paper_title: sk_p: a neural program corrector for MOOCs
+    paper_authors: Pu, Yewen and Narasimhan, Karthik and Solar-Lezama, Armando and Barzilay, Regina
+    paper_research_group: 
+    paper_year: 2016
+    paper_type: Conference
+    paper_published: International Conference on Systems, Programming, Languages and Applications: Software for Humanity
+    paper_link: https://dl.acm.org/doi/10.1145/2984043.2989222
+    paper_summary: Brute force search for localizing errors, skipgram (very local model, only considering very narrow context) candidate fixes checked against test suite
+    #tool
+    tool_name: sk_p
+    tool_goal: Correction
+    tool_error: Semantic
+    tool_representation: Token 
+    tool_method: RNN (LSTM), skipgram
+    tool_language: Python
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 7 sets of 315-9078 programs
+    dataset_type: No bug
+    dataset_label: Unlabeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Student programs, correct solutions to specific tasks
+        
+    #paper
+    paper_title: Automated vulnerability detection in source code using deep representation learning
+    paper_authors: Russell, Rebecca and Kim, Louis and Hamilton, Lei and Lazovich, Tomo and Harer, Jacob and Ozdemir, Onur and Ellingwood, Paul and McConley, Marc
+    paper_research_group: 
+    paper_year: 2018
+    paper_type: Conference
+    paper_published: International Conference on Machine Learning and Applications
+    paper_link: https://ieeexplore.ieee.org/document/8614145
+    paper_summary: Using deep learning to learn features directly from source code
+    #tool
+    tool_name: 
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: Token
+    tool_method: CNN, BoW, RNN, random forest
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 1,270,000 functions
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Labeled at function level, using 3 static analyzers + manual checking, Draper subset
+        
+    #paper
+    paper_title: Project achilles: A prototype tool for static method-level vulnerability detection of Java source code using a recurrent neural network
+    paper_authors: Saccente, Nicholas and Dehlinger, Josh and Deng, Lin and Chakraborty, Suranjan and Xiong, Yin
+    paper_research_group: 
+    paper_year: 2019
+    paper_type: Conference
+    paper_published: International Conference on Automated Software Engineering Workshop
+    paper_link: https://ieeexplore.ieee.org/document/8967427
+    paper_summary: Similar to Dam, method granularity
+    #tool
+    tool_name: Project Achilles
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: Token
+    tool_method: RNN (LSTM)
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 44,495
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Synthetic source code, Juliet dataset
+        
+    #paper
+    paper_title: Syntax and sensibility: Using language models to detect and correct syntax errors
+    paper_authors: Santos, Eddie Antonio and Campbell, Joshua Charles and Patel, Dhvani and Hindle, Abram and Amaral, Jose Nelson
+    paper_research_group: 
+    paper_year: 2018
+    paper_type: Conference
+    paper_published: International Conference on Software Analysis, Evolution and Reengineering
+    paper_link: https://ieeexplore.ieee.org/document/8330219
+    paper_summary: Single token syntax errors across domains
+    #tool
+    tool_name: Sensibility
+    tool_goal: Correction
+    tool_error: Syntactic
+    tool_representation: Token
+    tool_method: n-gram, RNN (LSTM)
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 2,300,000
+    dataset_type: No bug
+    dataset_label: Unlabeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code from Github (syntactically-valid)
+        
+    #paper
+    paper_title: Learning to map source code to software vulnerability using code-as-a-graph
+    paper_authors: Suneja, Sahil and Zheng, Yunhui and Zhuang, Yufan and Laredo, Jim and Morari, Alessandro
+    paper_research_group: 
+    paper_year: 2020
+    paper_type: Unpublished
+    paper_published: arXiv
+    paper_link: https://arxiv.org/abs/2006.08614
+    paper_summary: Detection by mapping from source code to vulnerabilities
+    #tool
+    tool_name: AI4VA
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: Graph
+    tool_method: graph-NN
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 200,000 + 1,270,000 +  475,000 functions
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: 3 datasets: Draper, Juliet, S-babi
+        
+    #paper
+    paper_title: Predicting Vulnerability In Large Codebases With Deep Code Representation
+    paper_authors: Tanwar, Anshul and Sundaresan, Krishna and Ashwath, Parmesh and Ganesan, Prasanna and Chandrasekaran, Sathish Kumar and Ravi, Sriram
+    paper_research_group: 
+    paper_year: 2020
+    paper_type: Unpublished
+    paper_published: arXiv
+    paper_link: https://arxiv.org/abs/2004.12783
+    paper_summary: Vulnerability detection in big codebass, feedforward NN with single hidden layer
+    #tool
+    tool_name: Detection
+    tool_goal: Vulnerabilities
+    tool_error: AST
+    tool_representation: NN
+    tool_method: C
+    tool_language: 
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 1,270,000 functions
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Draper dataset
+        
+    #paper
+    paper_title: Learning to fix build errors with graph2diff neural networks
+    paper_authors: Tarlow, Daniel and Moitra, Subhodeep and Rice, Andrew and Chen, Zimin and Manzagol, Pierre-Antoine and Sutton, Charles and Aftandilian, Edward
+    paper_research_group: 
+    paper_year: 2020
+    paper_type: Conference
+    paper_published: International Conference on Software Engineering Workshops
+    paper_link: https://dl.acm.org/doi/10.1145/3387940.3392181
+    paper_summary: Similar to DeepDelta, repairing build errors given broken source tree and compiler diagnostics using gated graph-NN and a pointer model with copy mechanism
+    #tool
+    tool_name: Graph2Diff
+    tool_goal: Correction
+    tool_error: Semantic
+    tool_representation: AST
+    tool_method: graph-NN (GGNN)
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 500,000 fixes
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code (error-fix pairs)
+        
+    #paper
+    paper_title: An empirical study on learning bug-fixing patches in the wild via neural machine translation
+    paper_authors: Tufano, Michele and Watson, Cody and Bavota, Gabriele and Penta, Massimiliano Di and White, Martin and Poshyvanyk, Denys
+    paper_research_group: 
+    paper_year: 2019
+    paper_type: Journal
+    paper_published: ACM Transactions on Software Engineering and Methodology
+    paper_link: https://dl.acm.org/doi/10.1145/3340544
+    paper_summary: Method level neural translation
+    #tool
+    tool_name: 
+    tool_goal: Correction
+    tool_error: Semantic
+    tool_representation: AST 
+    tool_method: RNN
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 2,300,000 bug-fix pairs
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code from Github, Bug-fix method level pairs
+        
+    #paper
+    paper_title: Neural program repair by jointly learning to localize and repair
+    paper_authors: Vasic, Marko and Kanade, Aditya and Maniatis, Petros and Bieber, David and Singh, Rishabh
+    paper_research_group: 
+    paper_year: 2019
+    paper_type: Conference
+    paper_published: International Conference on Learning Representations
+    paper_link: https://openreview.net/forum?id=ByloJ20qtm
+    paper_summary: Multi-headed LSTM pointer network for localization and repair of variable-misuse bugs (pointing to the bug and possible fix location)
+    #tool
+    tool_name: VARMISUSEREPAIR
+    tool_goal: Correction
+    tool_error: Semantic
+    tool_representation: Token 
+    tool_method: RNN (LSTM), pointer network
+    tool_language: Python
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 650,000 functions
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: ETH-Py150 subset
+        
+    #paper
+    paper_title: Automatically learning semantic features for defect prediction
+    paper_authors: Wang, Song and Liu, Taiyue and Tan, Lin
+    paper_research_group: 
+    paper_year: 2016
+    paper_type: Conference
+    paper_published: International Conference on Software Engineering
+    paper_link: https://dl.acm.org/doi/10.1145/2884781.2884804
+    paper_summary: Focus on automatic *semantic* feature learning through deep belief network, file granularity
+    #tool
+    tool_name: 
+    tool_goal: Detection
+    tool_error: Semantic
+    tool_representation: Graph 
+    tool_method: DBN
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 10 projects with 150-1046 files
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: PROMISE dataset
+        
+    #paper
+    paper_title: Sorting and transforming program repair ingredients via deep learning code similarities
+    paper_authors: White, Martin and Tufano, Michele and Martinez, Matias and Monperrus, Martin and Poshyvanyk, Denys
+    paper_research_group: 
+    paper_year: 2019
+    paper_type: Conference
+    paper_published: International Conference on Software Analysis, Evolution and Reengineering
+    paper_link: https://ieeexplore.ieee.org/document/8668043
+    paper_summary: Redundancy-based repair (programs contain seeds to their own repair), unsupervised repair based on similarity
+    #tool
+    tool_name: DeepRepair
+    tool_goal: Correction
+    tool_error: Semantic
+    tool_representation: AST 
+    tool_method: RNN
+    tool_language: Java
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 374 programs
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Defects4J subset
+        
+    #paper
+    paper_title: Graph-based, self-supervised program repair from diagnostic feedback
+    paper_authors: Yasunaga, Michihiro and Liang, Percy
+    paper_research_group: 
+    paper_year: 2020
+    paper_type: Conference
+    paper_published: International Conference on Machine Learning
+    paper_link: http://proceedings.mlr.press/v119/yasunaga20a.html
+    paper_summary: Localizing and repairing from compiler feedback, self-supervised
+    #tool
+    tool_name: DrRepair
+    tool_goal: Correction
+    tool_error: Syntactic
+    tool_representation: Graph
+    tool_method: graph-NN, RNN (LSTM)
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 45,000 + 18,000
+    dataset_type: Bugged + Fixed
+    dataset_label: Unlabeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: DeepFix, SPoC (Kulal 2019) datasets 
+        
+    #paper
+    paper_title: Devign: Effective vulnerability identification by learning comprehensive program semantics via graph neural networks
+    paper_authors: Zhou, Yaqin and Liu, Shangqing and Siow, Jingkai and Du, Xiaoning and Liu, Yang
+    paper_research_group: 
+    paper_year: 2020
+    paper_type: Conference
+    paper_published: Conference on Neural Information Processing Systems
+    paper_link: https://papers.nips.cc/paper/2019/hash/49265d2447bc3bbfe9e76306ce40a31f-Abstract.html
+    paper_summary: Learning comprehensive program semantics
+    #tool
+    tool_name: Devign
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: Graph
+    tool_method: graph-NN
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 48,000 commits
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: Real source code, manually labelled
+        
+    #paper
+    paper_title: μVulDeePecker: A deep learning-based system for multiclass vulnerability detection
+    paper_authors: Zou, Deqing and Wang, Sujuan and Xu, Shouhuai and Li, Zhen and Jin, Hai
+    paper_research_group: 
+    paper_year: 2019
+    paper_type: Journal
+    paper_published: IEEE Transactions on Dependable and Secure Computing
+    paper_link: https://ieeexplore.ieee.org/abstract/document/8846081
+    paper_summary: Improvement to VulDeePecker, fine-grained detection (code gadget), also recognizes type of vulnerability (multiclass)
+    #tool
+    tool_name: μVulDeePecker
+    tool_goal: Detection
+    tool_error: Vulnerabilities
+    tool_representation: Graph
+    tool_method: RNN (BLSTM)
+    tool_language: C
+    tool_available: 
+    tool_link: 
+    #dataset
+    dataset_size: 181,000 code gadgets
+    dataset_type: Bugged + Fixed
+    dataset_label: Labeled
+    dataset_availability: 
+    dataset_link: 
+    dataset_comments: 
+     
