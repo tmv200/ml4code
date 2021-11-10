@@ -69,8 +69,8 @@ ML4source code tools:
     tool_representation: Graph, Token
     tool_method: SVM
     tool_language: C
-    tool_available: Available
-    tool_link: https://github.com/SinkFinder/data
+    tool_available: Unvailable
+    tool_link:
     #dataset
     dataset_size: 15,000,000 lines of code
     dataset_type: No bug
@@ -181,7 +181,7 @@ ML4source code tools:
     dataset_size: 2,900,000 code snippets (1-40 lines of code)
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
-    dataset_availability: Available*
+    dataset_availability: Available
     dataset_link: https://iclr2018anon.github.io/semantic_code_repair/index.html
     dataset_comments: Real source code from Github injected with synthetic bugs
         
@@ -221,30 +221,30 @@ ML4source code tools:
     paper_link: https://dl.acm.org/doi/10.5555/3298239.3298436
     paper_summary: Iterative repair with compilations between iterations, multi-layered sequence-to-sequence neural netork with attention made out of RNN encoder and RNN decoder
     #tool
-    tool_name: Deepfix
+    tool_name: DeepFix
     tool_goal: Correction
     tool_error: Syntactic
     tool_representation: Token
     tool_method: RNN
     tool_language: C
-    tool_available: Unavailable
-    tool_link: 
+    tool_available: Available
+    tool_link: https://bitbucket.org/iiscseal/deepfix/src/master/
     #dataset
     dataset_size: 6,971 programs
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
-    dataset_availability: Unavailable
-    dataset_link: 
+    dataset_availability: Available
+    dataset_link: https://bitbucket.org/iiscseal/deepfix/src/master/
     dataset_comments: Student programs, correct solution with incorrect pair (synthetic mutation of correct and real incorrect)
         
     #paper
-    paper_title: Deep reinforcement learning for syntactic error repair in student programs
+    paper_title: Deep Reinforcement Learning for Programming Language Correction
     paper_authors: Gupta, Rahul and Kanade, Aditya and Shevade, Shirish
     paper_research_group: 
     paper_year: 2019
     paper_type: Conference
-    paper_published: Conference on Artificial Intelligence
-    paper_link: https://ojs.aaai.org//index.php/AAAI/article/view/3882
+    paper_published: AAAI Conference on Artificial Intelligence
+    paper_link: https://arxiv.org/abs/1801.10467
     paper_summary: Extension to DeepFix, unsupervised reinforcement learning (LfD -learning from demonstration) using compiler error messages as a reward function - simulating a programmer navigating through text to spot and fix the error
     #tool
     tool_name: RLAssist
@@ -253,41 +253,15 @@ ML4source code tools:
     tool_representation: Token
     tool_method: deep RL Learning from Demonstration, RNN (LSTM)
     tool_language: C
-    tool_available: Available*
-    tool_link: https://github.com/terne/dtuproject
+    tool_available: Available
+    tool_link: https://bitbucket.org/iiscseal/rlassist/src/master/
     #dataset
     dataset_size: 6,975 programs
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
-    dataset_availability: 
-    dataset_link: 
+    dataset_availability: Available
+    dataset_link: https://bitbucket.org/iiscseal/rlassist/src/master/
     dataset_comments: Student programs, synthetic mutation for bugged pair
-        
-    #paper
-    paper_title: Neural attribution for semantic bug-localization in student programs
-    paper_authors: Gupta, Rahul and Kanade, Aditya and Shevade, Shirish
-    paper_research_group: 
-    paper_year: 2019
-    paper_type: Conference
-    paper_published: Conference on Neural Information Processing Systems
-    paper_link: https://proceedings.neurips.cc/paper/2019/hash/f29a179746902e331572c483c45e5086-Abstract.html
-    paper_summary: Automatically localize bugs by checking how much each line influences passing or failing a test - suspiciousness score
-    #tool
-    tool_name: -
-    tool_goal: Detection
-    tool_error: Syntactic
-    tool_representation: AST
-    tool_method: tree-CNN
-    tool_language: C
-    tool_available: Unavailable
-    tool_link: 
-    #dataset
-    dataset_size: 29 tasks with average 1,300 programs
-    dataset_type: Bugged + Fixed
-    dataset_label: Labeled
-    dataset_availability: Unavailable
-    dataset_link: 
-    dataset_comments: Student programs, correct solution with incorrect pair (synthetic mutation of correct and real incorrect)
         
     #paper
     paper_title: Neural Bug Finding: A Study of Opportunities and Challenges
@@ -384,7 +358,7 @@ ML4source code tools:
     tool_method: RNN (LSTM)
     tool_language: Java
     tool_available: Available
-    tool_link: https://github.com/hideakihata/NMTbasedCorrectivePatchGenerationDataset
+    tool_link: https://github.com/neubig/lamtram
     #dataset
     dataset_size: 35,137 pairs
     dataset_type: Bugged + Fixed
@@ -415,8 +389,8 @@ ML4source code tools:
     dataset_size: 7 sets of 330 files
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
-    dataset_availability: Unavailable
-    dataset_link: 
+    dataset_availability: Available
+    dataset_link: http://openscience.us/repo/defect/
     dataset_comments: tera-PROMISE dataset
         
     #paper
@@ -461,14 +435,14 @@ ML4source code tools:
     tool_representation: Graph, AST
     tool_method: RNN (GRU), CNN
     tool_language: Java
-    tool_available: 
-    tool_link: 
+    tool_available: Available
+    tool_link: https://github.com/OOPSLA-2019-BugDetection/OOPSLA-2019-BugDetection
     #dataset
     dataset_size: 4,900,000 methods
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
-    dataset_availability: 
-    dataset_link: 
+    dataset_availability: Available
+    dataset_link: https://github.com/OOPSLA-2019-BugDetection/OOPSLA-2019-BugDetection
     dataset_comments: Real source code
         
     #paper
@@ -487,14 +461,14 @@ ML4source code tools:
     tool_representation: Graph, Token
     tool_method: BoW, CNN
     tool_language: C
-    tool_available: Available
-    tool_link: https://github.com/hazimhanif/svd_exp1
+    tool_available: Unavailable
+    tool_link: 
     #dataset
     dataset_size: 60,000
     dataset_type: Bugged + Not bugged
     dataset_label: Unlabeled
-    dataset_availability: Available
-    dataset_link: https://github.com/hazimhanif/svd_exp1
+    dataset_availability: Unavailable
+    dataset_link: 
     dataset_comments: SARD + NVD subset
         
     #paper
@@ -591,14 +565,14 @@ ML4source code tools:
     tool_representation: AST
     tool_method: RNN (BLSTM)
     tool_language: C
-    tool_available: 
-    tool_link: 
+    tool_available: Available
+    tool_link: https://github.com/DanielLin1986/function_representation_learning
     #dataset
     dataset_size: 6,000 functions
     dataset_type: Bugged + Fixed
     dataset_label: Unlabeled
-    dataset_availability: 
-    dataset_link: 
+    dataset_availability: Available
+    dataset_link: https://github.com/DanielLin1986/function_representation_learning
     dataset_comments: Only approximations of the labels
         
     #paper
@@ -643,13 +617,13 @@ ML4source code tools:
     tool_representation: AST
     tool_method: RNN (LSTM)
     tool_language: Java
-    tool_available: 
+    tool_available: Unavailable
     tool_link: 
     #dataset
     dataset_size: 4,800,000 builds (1 million failed)
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
-    dataset_availability: 
+    dataset_availability: Unavailable
     dataset_link: 
     dataset_comments: Real source code (Google build error-fix pairs)
         
@@ -695,13 +669,13 @@ ML4source code tools:
     tool_representation: Token 
     tool_method: RNN (LSTM), skipgram
     tool_language: Python
-    tool_available: 
+    tool_available: Unavailable
     tool_link: 
     #dataset
     dataset_size: 7 sets of 315-9078 programs
     dataset_type: No bug
     dataset_label: Unlabeled
-    dataset_availability: 
+    dataset_availability: Unavailable
     dataset_link: 
     dataset_comments: Student programs, correct solutions to specific tasks
         
@@ -721,14 +695,14 @@ ML4source code tools:
     tool_representation: Token
     tool_method: CNN, BoW, RNN, random forest
     tool_language: C
-    tool_available: Available*
-    tool_link: https://github.com/hazimhanif/svd_exp1
+    tool_available: Unavailable
+    tool_link: 
     #dataset
     dataset_size: 1,270,000 functions
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
     dataset_availability: Available*
-    dataset_link: https://github.com/hazimhanif/svd_exp1
+    dataset_link: https://osf.io/d45bw/
     dataset_comments: Labeled at function level, using 3 static analyzers + manual checking, Draper subset
         
     #paper
@@ -754,7 +728,7 @@ ML4source code tools:
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
     dataset_availability: Available
-    dataset_link: https://github.com/find-sec-bugs/juliet-test-suite
+    dataset_link: https://gitlab.com/TUSoftwareEngineering/vulnerability-localization-using-machine-learning
     dataset_comments: Synthetic source code, Juliet dataset
         
     #paper
@@ -774,13 +748,13 @@ ML4source code tools:
     tool_method: n-gram, RNN (LSTM)
     tool_language: Java
     tool_available: Available
-    tool_link: https://github.com/naturalness/sensibility
+    tool_link: https://github.com/naturalness/sensibility, https://archive.org/details/sensibility-saner2018
     #dataset
     dataset_size: 2,300,000
     dataset_type: No bug
     dataset_label: Unlabeled
     dataset_availability: Available
-    dataset_link: https://github.com/naturalness/sensibility
+    dataset_link: https://github.com/naturalness/sensibility, https://archive.org/details/sensibility-saner2018
     dataset_comments: Real source code from Github (syntactically-valid)
         
     #paper
@@ -799,14 +773,14 @@ ML4source code tools:
     tool_representation: Graph, AST
     tool_method: graph-NN
     tool_language: C
-    tool_available: Available*
+    tool_available: Available
     tool_link: https://github.com/AI4VA/va
     #dataset
     dataset_size: 200,000 + 1,270,000 +  475,000 functions
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
-    dataset_availability: 
-    dataset_link: 
+    dataset_availability: Available
+    dataset_link: https://github.com/AI4VA/va
     dataset_comments: 3 datasets: Draper, Juliet, S-babi
         
     #paper
@@ -825,13 +799,13 @@ ML4source code tools:
     tool_representation: AST
     tool_method: NN
     tool_language: C
-    tool_available: 
+    tool_available: Unavailable
     tool_link: 
     #dataset
     dataset_size: 1,270,000 functions
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
-    dataset_availability: 
+    dataset_availability: Unavailable
     dataset_link: 
     dataset_comments: Draper dataset
         
@@ -851,13 +825,13 @@ ML4source code tools:
     tool_representation: AST
     tool_method: graph-NN (GGNN)
     tool_language: Java
-    tool_available: 
+    tool_available: Unavailable
     tool_link: 
     #dataset
     dataset_size: 500,000 fixes
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
-    dataset_availability: 
+    dataset_availability: Unavailable
     dataset_link: 
     dataset_comments: Real source code (error-fix pairs)
         
@@ -877,14 +851,14 @@ ML4source code tools:
     tool_representation: AST 
     tool_method: RNN
     tool_language: Java
-    tool_available: 
-    tool_link: 
+    tool_available: Available
+    tool_link: https://sites.google.com/view/learning-fixes
     #dataset
     dataset_size: 2,300,000 bug-fix pairs
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
-    dataset_availability: 
-    dataset_link: 
+    dataset_availability: Available
+    dataset_link: https://sites.google.com/view/learning-fixes
     dataset_comments: Real source code from Github, Bug-fix method level pairs
         
     #paper
@@ -909,8 +883,8 @@ ML4source code tools:
     dataset_size: 650,000 functions
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
-    dataset_availability: 
-    dataset_link: 
+    dataset_availability: Available
+    dataset_link: https://aka.ms/iclr18-prog-graphs-dataset
     dataset_comments: ETH-Py150 subset
         
     #paper
@@ -956,13 +930,13 @@ ML4source code tools:
     tool_method: RNN
     tool_language: Java
     tool_available: Available
-    tool_link: https://github.com/SpoonLabs/astor-experiments/tree/master/DeepRepair
+    tool_link: https://sites.google.com/view/deeprepair
     #dataset
     dataset_size: 374 programs
     dataset_type: Bugged + Fixed
     dataset_label: Labeled
-    dataset_availability: 
-    dataset_link: 
+    dataset_availability: Available
+    dataset_link: https://sites.google.com/view/deeprepair
     dataset_comments: Defects4J subset
         
     #paper
@@ -1033,8 +1007,8 @@ ML4source code tools:
     tool_representation: Graph, AST
     tool_method: RNN (BLSTM)
     tool_language: C
-    tool_available: Available
-    tool_link: https://github.com/muVulDeePecker/muVulDeePecker
+    tool_available: Unavailable
+    tool_link:
     #dataset
     dataset_size: 181,000 code gadgets
     dataset_type: Bugged + Fixed
